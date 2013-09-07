@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+
+    <definition name="backend-template" template="/WEB-INF/backend/common/template/default_template.jsp">
+		<put-attribute name="title" value="None" />
+		<put-attribute name="constant-header" value="/WEB-INF/backend/common/template/constant_empty.jsp" />
+		<put-attribute name="constant-toolbar" value="/WEB-INF/backend/common/template/constant_empty.jsp" />
+		<put-attribute name="constant-header" value="/WEB-INF/backend/common/template/constant_header.jsp" />
+		<put-attribute name="main-content1" value="/WEB-INF/backend/common/template/constant_empty.jsp" />
+		<put-attribute name="main-content2" value="/WEB-INF/backend/common/template/constant_empty.jsp" />
+		<put-attribute name="main-content3" value="/WEB-INF/backend/common/template/constant_empty.jsp" />
+		<put-attribute name="main-content4" value="/WEB-INF/backend/common/template/constant_empty.jsp" />
+		<put-attribute name="main-content5" value="/WEB-INF/backend/common/template/constant_empty.jsp" />
+		<put-attribute name="main-content6" value="/WEB-INF/backend/common/template/constant_empty.jsp" />
+		<put-attribute name="main-content7" value="/WEB-INF/backend/common/template/constant_empty.jsp" />
+		<put-attribute name="constant-footer" value="/WEB-INF/backend/common/template/constant_footer.jsp" />
+	</definition>
+	
+    <definition name="welcome" extends="backend-template">
+	   	<put-attribute name="main-content1" value="/WEB-INF/backend/welcome.jsp" />
+	   	<put-attribute name="title" value="Welcome" />
+  	 </definition>
+  	 
+    <definition name="default_500_error" extends="backend-template">
+	   	<put-attribute name="main-content1" value="/WEB-INF/backend/common/error/default-500.jsp" />
+	   	<put-attribute name="title" value="500 Error" />
+  	 </definition>
+
+    
+</tiles-definitions>
