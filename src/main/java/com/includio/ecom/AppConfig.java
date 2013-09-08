@@ -9,8 +9,13 @@ import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 import org.springframework.web.servlet.view.tiles2.TilesConfigurer;
 import org.springframework.web.servlet.view.tiles2.TilesViewResolver;
 
+/**
+ * ApplicationContext configuration
+ * @author Shihai.Fu
+ *
+ */
 @Configuration
-@ComponentScan(basePackageClasses = WebConfig.class)
+@ComponentScan(basePackageClasses = AppConfig.class)
 @EnableTransactionManagement
 public class AppConfig extends DBConfig{
 
